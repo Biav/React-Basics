@@ -1,0 +1,11 @@
+@import '../style.scss';
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    height: 50px;
+    background: $gray;
+    padding: 10px 40px;
+}
