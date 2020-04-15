@@ -1,10 +1,12 @@
 import React from 'react';
 import './NavBar.scss';
 import Timer from './Timer/Timer';
+import './../style.scss';
+import componentColor from './../../hoc/ComponentColor';
 
-const navBar = () => (
+const navBar = (props) => (
     <div className="nav-bar">
-        <div>
+        <div className={props.color}>
             Todo List
         </div>
         <div>
@@ -14,4 +16,4 @@ const navBar = () => (
 
 )
 
-export default navBar;
+export default componentColor(navBar);

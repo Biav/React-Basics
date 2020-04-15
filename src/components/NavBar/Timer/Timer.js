@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import componentColor from '../../../hoc/ComponentColor';
+import './../../style.scss';
 
 class Timer extends Component {
     constructor() {
@@ -24,10 +26,12 @@ class Timer extends Component {
     render(){
         return(
             <>
-                {this.state.date.toLocaleTimeString()}
+                <span className={this.props.color}>
+                    {this.state.date.toLocaleTimeString()} 
+                </span>
             </>
         )
     }
 }
 
-export default Timer;
+export default componentColor(Timer);
